@@ -19,12 +19,14 @@ class Ball extends StatefulWidget {
 }
 
 class _BallState extends State<Ball> {
+  var ballNumber = 1;
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: FlatButton(
         onPressed: () {
-          print('Ball got clicked.');
+          setState(() {});
         },
         child: Image.asset('images/ball1.png'),
       ),
