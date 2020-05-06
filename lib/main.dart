@@ -8,7 +8,7 @@ void main() => runApp(
             title: Text('Ask Me Anything'),
             backgroundColor: Colors.blue[900],
           ),
-          body: Container(),
+          body: Ball(),
         ),
       ),
     );
@@ -21,6 +21,8 @@ class Ball extends StatefulWidget {
 class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Image.asset('images/ball1.png'),
+    );
   }
 }
